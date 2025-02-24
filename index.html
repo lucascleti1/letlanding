@@ -2,33 +2,32 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <!-- Responsivo en móviles -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- SEO básico -->
   <meta name="description" content="Soluciones Tecnológicas de alto impacto para automatización, nube y ciberseguridad.">
   <meta name="keywords" content="automatización, nube, ciberseguridad, LET, soluciones tecnológicas">
   <meta name="author" content="LET - Soluciones Tecnológicas">
-
+  
   <title>LET - Soluciones Tecnológicas</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-
-  <!-- CSS principal -->
   <link rel="stylesheet" href="assets/index-9308da2b.css">
 </head>
 <body>
+
   <!-- HEADER FIJO -->
   <header class="header">
     <div class="header__logo-container">
       <img src="assets/logo-blanco.png" alt="LET - Soluciones Tecnológicas" class="header__logo">
     </div>
-    <!-- Botón “hamburger” para móviles -->
-    <div class="header__menu-btn" id="menuBtn">
+
+    <!-- Botón de menú para móviles -->
+    <button class="header__menu-btn" id="menuBtn" aria-label="Abrir menú">
       <span class="header__menu-btn-bar"></span>
       <span class="header__menu-btn-bar"></span>
       <span class="header__menu-btn-bar"></span>
-    </div>
+    </button>
+
     <!-- Navegación principal -->
-    <nav class="header__nav" id="navMenu" role="navigation">
+    <nav class="header__nav" id="navMenu" role="navigation" aria-label="Menú Principal">
       <ul>
         <li><a href="#empresa">Sobre Nosotros</a></li>
         <li><a href="#servicios">Servicios</a></li>
@@ -38,83 +37,62 @@
     </nav>
   </header>
 
-  <!-- Contenedor para nuestro contenido principal -->
+  <!-- Contenido Principal -->
   <main>
 
-    <!-- SECCIÓN: QUIÉNES SOMOS -->
+    <!-- Sección Quiénes Somos -->
     <section id="empresa">
       <div class="section-container">
         <h2>¿QUIÉNES SOMOS?</h2>
-        <div class="contenido">
-          <p><strong>Misión:</strong> Desarrollamos soluciones tecnológicas de alto impacto para automatización, infraestructura en la nube y ciberseguridad.</p>
-          <p><strong>Valores:</strong> Innovación, eficiencia operativa y seguridad digital en cada proyecto.</p>
-          <p><strong>Objetivos:</strong> Construimos arquitecturas escalables, entornos seguros y procesos optimizados para empresas que buscan evolucionar en la era digital.</p>
-        </div>
+        <p><strong>Misión:</strong> Desarrollamos soluciones tecnológicas de alto impacto para automatización, infraestructura en la nube y ciberseguridad.</p>
+        <p><strong>Valores:</strong> Innovación, eficiencia operativa y seguridad digital en cada proyecto.</p>
+        <p><strong>Objetivos:</strong> Construimos arquitecturas escalables, entornos seguros y procesos optimizados.</p>
       </div>
     </section>
 
-    <!-- SECCIÓN: SERVICIOS -->
+    <!-- Sección Servicios -->
     <section id="servicios">
       <div class="section-container">
         <h2>Nuestros Servicios</h2>
         <div class="servicios-container">
           <div class="servicio">
             <h3>Automatización</h3>
+            <img src="assets/automatizacion.jpg" alt="Automatización">
             <p>Soluciones para optimizar procesos y reducir costos.</p>
-            <img src="assets/automatizacion.jpg" alt="Servicio de Automatización">
           </div>
           <div class="servicio">
             <h3>Infraestructura en la Nube</h3>
+            <img src="assets/nube.jpg" alt="Infraestructura en la nube">
             <p>Implementamos entornos escalables en AWS y Azure.</p>
-            <img src="assets/nube.jpg" alt="Servicio de Infraestructura en la nube">
           </div>
           <div class="servicio">
             <h3>Ciberseguridad</h3>
+            <img src="assets/ciberseguridad.jpg" alt="Ciberseguridad">
             <p>Protección avanzada contra ciberataques.</p>
-            <img src="assets/ciberseguridad.jpg" alt="Servicio de Ciberseguridad">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECCIÓN: TECNOLOGÍAS -->
+    <!-- Sección Tecnologías -->
     <section id="tecnologias">
       <div class="section-container">
         <h2>Tecnologías que Utilizamos</h2>
         <div class="tech-container">
-          <div class="tech-item">
-            <img src="assets/aws.png" alt="AWS">
-            <p>AWS</p>
-          </div>
-          <div class="tech-item">
-            <img src="assets/azure.png" alt="Azure">
-            <p>Azure</p>
-          </div>
-          <div class="tech-item">
-            <img src="assets/docker.png" alt="Docker">
-            <p>Docker</p>
-          </div>
-          <div class="tech-item">
-            <img src="assets/kubernetes.png" alt="Kubernetes">
-            <p>Kubernetes</p>
-          </div>
-          <div class="tech-item">
-            <img src="assets/python.png" alt="Python">
-            <p>Python</p>
-          </div>
-          <div class="tech-item">
-            <img src="assets/js.png" alt="JavaScript">
-            <p>JavaScript</p>
-          </div>
+          <div class="tech-item"><img src="assets/aws.png" alt="AWS"><p>AWS</p></div>
+          <div class="tech-item"><img src="assets/azure.png" alt="Azure"><p>Azure</p></div>
+          <div class="tech-item"><img src="assets/docker.png" alt="Docker"><p>Docker</p></div>
+          <div class="tech-item"><img src="assets/kubernetes.png" alt="Kubernetes"><p>Kubernetes</p></div>
+          <div class="tech-item"><img src="assets/python.png" alt="Python"><p>Python</p></div>
+          <div class="tech-item"><img src="assets/js.png" alt="JavaScript"><p>JavaScript</p></div>
         </div>
       </div>
     </section>
 
-    <!-- SECCIÓN: CONTACTO -->
+    <!-- Sección Contacto -->
     <section id="contacto">
       <div class="section-container">
         <h2>Contáctanos</h2>
-        <!-- Envía el formulario a lucas.jc@outlook.com con validación JS -->
         <form action="mailto:lucas.jc@outlook.com" method="post" enctype="text/plain" onsubmit="return checkForm(this);">
           <input type="text" name="nombre" placeholder="Nombre" required>
           <input type="email" name="correo" placeholder="Correo Electrónico" required>
@@ -132,17 +110,18 @@
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 LET - Soluciones Tecnológicas</p>
     <p>Teléfono: <a href="tel:+543413035084">+54 341 303 5084</a></p>
-    <p>Instagram: <a href="https://instagram.com/let_tecnologia" class="instagram">@let_tecnologia</a></p>
+    <p>Instagram: <a href="https://instagram.com/let_tecnologia">@let_tecnologia</a></p>
   </footer>
 
-  <!-- BOTÓN SCROLL-TO-TOP -->
+  <!-- Botón Scroll-Top -->
   <button id="btnTop" title="Volver arriba">↑</button>
 
   <!-- Scripts -->
   <script src="assets/index-cac45561.js"></script>
+
 </body>
 </html>
